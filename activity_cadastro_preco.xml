@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cadastro_preco"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.henning.gelomatica.cadastroPreco">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextEndereco"
+        android:hint="Endereço"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editTextPreco"
+        android:layout_marginTop="149dp"
+        android:layout_below="@+id/radioGroup4"
+        android:layout_alignEnd="@+id/radioGroup3"
+        android:hint="Valor R$."
+        android:singleLine="false"
+        android:phoneNumber="false"
+        tools:ignore="UnknownId" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextBar"
+        android:hint="Nome Bar/Distribuidora"
+        android:layout_below="@+id/editTextEndereco"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp" />
+
+    <Button
+        android:text="Cadastrar Preço"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:id="@+id/button"
+        android:elevation="17dp"
+        android:background="@android:color/holo_orange_light"
+        tools:ignore="HardcodedText"
+        android:onClick="addCadastro"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="17dp"
+        android:id="@+id/grupoTipo"
+        android:checkedButton="@+id/radioButtonLata283ml">
+
+        <RadioButton
+            android:text="Lata 283ml (Piriguete)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonLata283ml"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClickedTIPO" />
+
+        <RadioButton
+            android:text="Lata 360ml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonLata360ml"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClickedTIPO" />
+
+        <RadioButton
+            android:text="Garrafa 600ml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonGarrafa600ml"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClickedTIPO" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="47dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="27dp"
+        android:id="@+id/grupoCerveja"
+        android:checkedButton="@+id/radioButtonSkol">
+
+        <RadioButton
+            android:text="Skol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonSkol"
+            android:onClick="onRadioButtonClickedCERVEJA" />
+
+        <RadioButton
+            android:text="Kaiser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonKaiser"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClickedCERVEJA" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonItaipava"
+            android:layout_weight="1"
+            android:text="Itaipava"
+            android:onClick="onRadioButtonClickedCERVEJA" />
+    </RadioGroup>
+
+    <TextView
+        android:text="Tipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/radioGroup2"
+        android:layout_marginStart="43dp"
+        android:id="@+id/textView"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+    <TextView
+        android:text="Cerveja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="34dp"
+        android:id="@+id/textView5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+</RelativeLayout>

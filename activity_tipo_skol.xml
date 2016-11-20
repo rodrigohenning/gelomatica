@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tipo_skol"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.henning.gelomatica.tipoSkol"
+    android:background="@android:color/background_light">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:id="@+id/button13"
+        android:background="@mipmap/skol_piriguete"
+        android:padding="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:onClick="latinha" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:id="@+id/button11"
+        android:background="@mipmap/skol_lata"
+        android:padding="30dp"
+        android:layout_below="@+id/button13"
+        android:layout_alignParentStart="true"
+        android:onClick="lata" />/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:id="@+id/button12"
+        android:background="@mipmap/skol_garrafa"
+        android:padding="30dp"
+        android:layout_below="@+id/button11"
+        android:layout_alignParentStart="true"
+        android:onClick="garrafa" />/>
+
+    <TextView
+        android:text="Lata 283ml (Piriguete)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_above="@+id/button11"
+        android:layout_toEndOf="@+id/button13"
+        android:layout_marginStart="13dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:text="Lata  310ml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView11"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_alignBaseline="@+id/button11"
+        android:layout_alignBottom="@+id/button11"
+        android:layout_alignStart="@+id/textView10" />
+
+    <TextView
+        android:text="Garrafa 600ml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView12"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_marginBottom="20dp"
+        android:layout_alignBottom="@+id/button12"
+        android:layout_alignStart="@+id/textView11" />
+
+    <TextView
+        android:text="Selecione o Tipo de busca "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView18"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/button13" />
+</RelativeLayout>
